@@ -1,1 +1,50 @@
-<p>의심스러운 URL을 복사 붙여넣기 해주세요.</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="searchbox">
+      <div class="header">
+        <h1>분석 결과</h1>
+        <input
+          id="value"
+          onkeyup="filter()"
+          placeholder="Type to Search"
+          type="text"
+        />
+        <div id="btn_group">
+          <button
+            id="test_btn1"
+            onclick="location.href='http://localhost:4200/search'"
+            type="button"
+          >
+            Search
+          </button>
+          <div class="header2">
+            <h3>
+              이 URL은 <span style="color: #0000cd;">정상</span> 사이트로
+              연결됩니다.
+            </h3>
+            <div id="btn_group2">
+              <button
+                id="home_btn"
+                onclick="location.href='http://localhost:4200/home'"
+              >
+                Home
+              </button>
+              <div id="btn_group3">
+                <button id="q_btn">문의하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
