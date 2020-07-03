@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <div class="searchbox">
+      <div class="header">
+        <h1>분석 결과</h1>
+        <input
+          id="value"
+          onkeyup="filter()"
+          placeholder="Type to Search"
+          type="text"
+        />
+        <div id="btn_group">
+          <button
+            id="test_btn1"
+            onclick="location.href='http://localhost:4200/search'"
+            type="button"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="header2">
+        <h3>
+          이 URL은 <span style="color: #ff0000;">피싱</span> 사이트로
+          연결됩니다.
+        </h3>
+        <h4>URL이 만들어진 국가는 입니다.</h4>
+      </div>
+      <div id="btn_group2">
+        <button
+          id="home_btn"
+          onclick="location.href='http://localhost:4200/home'"
+        >
+          Home
+        </button>
+      </div>
+      <div id="btn_group3">
+        <button id="q_btn">문의하기</button>
+      </div>
+      <div id="btn_group4">
+        <button id="de_btn">신고하기</button>
+      </div>
+      <div id="btn_group5">
+        <button id="m_btn">자세히 보기</button>
+      </div>
+    </div>
+  </body>
+</html>
